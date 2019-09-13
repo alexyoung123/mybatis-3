@@ -250,6 +250,7 @@ class PooledConnection implements InvocationHandler {
   }
 
   private void checkConnection() throws SQLException {
+    System.out.println("Karkan");
     if (!valid) {
       throw new SQLException("Error accessing PooledConnection. Connection is invalid.");
     }
